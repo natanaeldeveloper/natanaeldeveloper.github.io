@@ -1,15 +1,15 @@
 import { WhatsAppOutlined, CoffeeOutlined } from '@ant-design/icons'
 import { Space } from 'antd'
-import { Container, TextBox, Button, ButtonBudget, ButtonJobOffer } from "./style"
+import { Container, TextArea, Button, ButtonBudget, ButtonJobOffer, ButtonArea } from "./style"
 
 const Header = () => {
   return (
     <Container>
-      <TextBox>
+      <TextArea>
         <h1>Natanael Oliveira</h1>
         <h3>Analista e Desenvolvedor de Sistemas</h3>
         <h4>Web Developer | Full-Stack</h4>
-        <Space>
+        <ButtonArea>
           <Button className={ButtonBudget()}>
             <WhatsAppOutlined />
             <span>Fazer orçamento</span>
@@ -18,8 +18,8 @@ const Header = () => {
             <span>Recrutar</span>
             <CoffeeOutlined />
           </Button>
-        </Space>
-      </TextBox>
+        </ButtonArea>
+      </TextArea>
     </Container>
   )
 }
