@@ -1,5 +1,4 @@
 import { WhatsAppOutlined, CoffeeOutlined } from '@ant-design/icons'
-import { Space } from 'antd'
 import { Container, TextArea, Button, ButtonBudget, ButtonJobOffer, ButtonArea } from "./style"
 
 const Header = () => {

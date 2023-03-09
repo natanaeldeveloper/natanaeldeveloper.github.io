@@ -8,54 +8,55 @@ export const Container = styled('section', {
 })
 
 export const TextArea = styled('div', {
-  paddingInline: '2.5rem',
   alignSelf: 'center',
   color: '$light100',
 
+  paddingInline: '2rem',
+
   h1: {
     fontFamily: '$header',
-    fontSize: '3.5rem',
+    fontSize: '2rem',
   },
 
   h3: {
     fontFamily: '$caption',
-    fontSize: '1.5rem',
+    fontSize: '1rem',
     fontWeight: 500,
   },
 
   h4: {
+    fontSize: '1rem',
     fontWeight: 500,
-    fontSize: '1.5rem',
   },
 
-  '@bp3': {
+  '@md': {
     h1: {
       fontSize: '2.5rem',
     },
-  
+
     h3: {
       fontSize: '1.2rem',
     },
-  
+
     h4: {
       fontSize: '1.2rem',
     }
   },
 
-  '@bp1': {
-    paddingInline: '2rem',
+  '@lg': {
+    paddingInline: '8rem',
 
     h1: {
-      fontSize: '2rem',
+      fontSize: '3.5rem',
     },
-  
+
     h3: {
-      fontSize: '1rem',
+      fontSize: '1.5rem',
     },
-  
+
     h4: {
-      fontSize: '1rem',
-    }
+      fontSize: '1.5rem',
+    },
   }
 })
 
@@ -67,20 +68,19 @@ export const ButtonArea = styled('div', {
 })
 
 export const Button = styled('button', {
-  padding: '0.7rem 1.1rem',
   borderRadius: 4,
   fontFamily: '$caption',
-  fontSize: '1rem',
   display: 'flex',
   flexFlow: 'row nowrap',
   gap: 8,
   alignItems: 'center',
   transition: '.3s',
-
-  '@bp1': {
-   padding: '0.5rem 0.9rem',
+  padding: '0.5rem 0.9rem',
   fontSize: '0.9rem',
 
+  '@md': {
+    padding: '0.7rem 1.1rem',
+    fontSize: '1rem',
   }
 })
 

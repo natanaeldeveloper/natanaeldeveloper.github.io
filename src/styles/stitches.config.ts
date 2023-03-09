@@ -13,15 +13,18 @@ export const {
   theme
 } = createStitches({
   media: {
-    bp1: '(max-width: 640px)',
-    bp2: '(max-width: 768px)',
-    bp3: '(max-width: 1024px)',
+    xs: '(min-width: 0px)',
+    sm: '(min-width: 576px)',
+    md: '(min-width: 768px)',
+    lg: '(min-width: 992px)',
+    xl: '(min-width: 1200px)',
+    xxl: '(min-width: 1400px)',
   },
   theme: {
     colors: {
 
       primary: '#0056d3',
-      
+
       // light scales
       light100: '#FFFFFF',
       light200: '#F8F9FA',
