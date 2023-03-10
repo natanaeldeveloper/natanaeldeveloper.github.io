@@ -21,11 +21,11 @@ export const Content = styled('div', {
   '@sm': {
     padding: '5rem 4rem',
   },
-  
+
   '@md': {
     padding: '5rem 8rem',
   },
-  
+
   '@lg': {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -64,5 +64,31 @@ export const myPhotoClass = css('img', {
   '@xxl': {
     width: '300px !important',
     height: '300px !important',
+  }
+})
+
+export const SkillArea = styled('div', {
+  paddingTop: '1rem',
+  display: 'flex',
+  width: '100%',
+  gap: 8,
+  justifyContent: 'center',
+  flexFlow: 'row wrap',
+
+  '@lg': {
+    justifyContent: 'flex-start',
+  }
+})
+
+export const SkillItemCss = css('svg', {
+  transition: '.3s',
+  width: '50px !important',
+  height: '50px !important',
+  fill: '$dark500',
+  border: '1px solid $light400',
+  padding: 8,
+  borderRadius: 4,
+
+  '&:hover': {
   }
 })
