@@ -17,7 +17,7 @@ export const Content = styled('div', {
 
   '@sm': {
     paddingInline: '7rem',
-    gap: '1rem',
+    gap: '0.5rem',
   },
 
   '@md': {
@@ -25,11 +25,9 @@ export const Content = styled('div', {
   },
 
   '@lg': {
-    paddingInline: '8rem',
   },
 
   '@xl': {
-    paddingInline: '10rem',
   }
 })
 

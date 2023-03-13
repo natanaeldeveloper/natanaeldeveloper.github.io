@@ -13,6 +13,10 @@ const globalStyle = globalCss({
   body: {
     fontFamily: '$body',
   },
+
+  div: {
+    border: '1px solid black',
+  }
 })
 
 export default globalStyle

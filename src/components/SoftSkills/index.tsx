@@ -1,7 +1,3 @@
-
-import { Skeleton } from 'antd'
-import SkeletonAvatar from "antd/es/skeleton/Avatar"
-
 import { Container, SoftSkillItem } from "./style"
 import { cibCodesandbox } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
