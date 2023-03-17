@@ -12,7 +12,7 @@ export const Container = styled('section', {
 
   '@lg': {
     flexDirection: 'row',
-    padding: '5rem 8rem',
+    padding: '5rem 5rem',
   }
 })
 
