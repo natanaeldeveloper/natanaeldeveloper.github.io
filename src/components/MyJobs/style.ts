@@ -2,6 +2,9 @@ import { styled } from "../../styles/stitches.config";
 
 export const Container = styled('section', {
   padding: '3rem 1rem',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
 
   '@lg': {
     paddingInline: '2rem',
@@ -12,12 +15,12 @@ export const Content = styled('div', {
   display: 'flex',
   flexFlow: 'row wrap',
   justifyContent: 'center',
-  gap: '1rem',
-
-
+  gap: '1.5rem',
+  paddingInline: '1rem',
+  
   '@sm': {
-    paddingInline: '7rem',
-    gap: '0.5rem',
+    gap: '2rem',
+    paddingInline: '2rem',
   },
 
   '@md': {
@@ -35,12 +38,18 @@ export const JobCard = styled('div', {
   backgroundColor: '$light500',
   boxShadow: '1px 10px 10px $light200',
   padding: '2rem',
-  width: 170,
-  height: 170,
   display: 'flex',
   justifyContent: 'center',
+  textAlign: 'center',
   alignItems: 'center',
   color: '$dark100',
+  width: 270,
+  height: 270,
+
+  '@sm': {
+    width: 250,
+    height: 250,
+  },
 
   '@lg': {
     width: 210,
@@ -48,7 +57,7 @@ export const JobCard = styled('div', {
   },
 
   '@xl': {
-    width: 250,
-    height: 250,
+    width: 300,
+    height: 300,
   },
 })
