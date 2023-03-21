@@ -7,7 +7,7 @@ export const Container = styled('section', {
   alignItems: 'center',
 
   '@lg': {
-    paddingInline: '2rem',
+    paddingInline: '10rem',
   }
 })
 

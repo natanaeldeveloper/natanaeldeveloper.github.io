@@ -19,25 +19,27 @@ export const Content = styled('div', {
   },
 
   '@sm': {
-    padding: '5rem 4rem',
+    paddingInline: '4rem',
   },
-
+  
   '@md': {
-    padding: '5rem 8rem',
+    paddingInline: '8rem',
+    paddingY: '5rem',
   },
-
+  
   '@lg': {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    padding: '5rem 7rem',
+    paddingInline: '7rem',
+    paddingY: '10rem',
   },
 
   '@xl': {
-    padding: '5rem 12rem',
+    paddingInline: '12rem',
   },
 
   '@xxl': {
-    padding: '5rem 18rem',
+    paddingInline: '18rem',
   }
 
 })

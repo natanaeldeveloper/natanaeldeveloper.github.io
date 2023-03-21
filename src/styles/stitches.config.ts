@@ -45,5 +45,11 @@ export const {
       caption: "'Open Sans', sans-serif",
       body: "'Yantramanav', sans-serif",
     }
+  },
+  utils: {
+    paddingY: (value: any) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
   }
 })
