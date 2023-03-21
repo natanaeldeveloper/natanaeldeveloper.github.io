@@ -9,6 +9,8 @@ const MyJobs: React.FC = () => {
     { name: 'site avaliações diagnósticas' },
     { name: 'bloco de notas' },
     { name: 'sistema de estoque' },
+    { name: 'Notepad' },
+    { name: 'SAGE' },
   ])
 
   const [MenuValue, setMenuValue] = useState<string | number>('All')
