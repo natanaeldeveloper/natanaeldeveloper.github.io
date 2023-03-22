@@ -51,5 +51,9 @@ export const {
       paddingTop: value,
       paddingBottom: value,
     }),
+    borderY: (value: any) => ({
+      borderTop: value,
+      borderBottom: value,
+    }),
   }
 })

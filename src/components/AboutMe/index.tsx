@@ -8,6 +8,7 @@ import {
   cibPostgresql,
   cibReact,
   cibCss3,
+  cibJs,
   cibHtml5,
 } from '@coreui/icons'
 
@@ -29,7 +30,7 @@ const AboutMe: React.FC = () => {
           industry's standard dummy text ever since the 1500s,
           when an unknown printer took a galley of type and
           scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap
+          survived not only five cent uries, but also the leap
           into electronic typesetting, remaining essentially
           unchanged. It was popularised in the 1960s with the
           release of Letraset sheets containing Lorem Ipsum
@@ -42,7 +43,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibLaravel}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#F55247', border: '1px solid #F55247' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#F55247', border: '1px solid #F55247' } } })}
                 />
               </span>
             </Tooltip>
@@ -51,7 +52,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibJquery}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#0769ad', border: '1px solid #0769ad' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#0769ad', border: '1px solid #0769ad' } } })}
                 />
               </span>
             </Tooltip>
@@ -60,7 +61,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibBootstrap}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#6610f2', border: '1px solid #6610f2' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#6610f2', border: '1px solid #6610f2' } } })}
                 />
               </span>
             </Tooltip>
@@ -69,7 +70,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibMysql}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#3E6E93', border: '1px solid #3E6E93' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#3E6E93', border: '1px solid #3E6E93' } } })}
                 />
               </span>
             </Tooltip>
@@ -78,7 +79,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibPostgresql}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#336791', border: '1px solid #336791' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#336791', border: '1px solid #336791' } } })}
                 />
               </span>
             </Tooltip>
@@ -87,7 +88,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibReact}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#61dafb', border: '1px solid #61dafb' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#61dafb', border: '1px solid #61dafb' } } })}
                 />
               </span>
             </Tooltip>
@@ -96,7 +97,16 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibCss3}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#2965f1', border: '1px solid #2965f1' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#2965f1', border: '1px solid #2965f1' } } })}
+                />
+              </span>
+            </Tooltip>
+
+            <Tooltip title="JavaScript" color={'#F0DB4F'}>
+              <span>
+                <CIcon
+                  icon={cibJs}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#F0DB4F', border: '1px solid #F0DB4F', fill: '#323330' } } })}
                 />
               </span>
             </Tooltip>
@@ -105,7 +115,7 @@ const AboutMe: React.FC = () => {
               <span>
                 <CIcon
                   icon={cibHtml5}
-                  className={SkillItemCss({ css: { '&:hover': { fill: '#F06529', border: '1px solid #F06529' } } })}
+                  className={SkillItemCss({ css: { '&:hover': { backgroundColor: '#F06529', border: '1px solid #F06529' } } })}
                 />
               </span>
             </Tooltip>

@@ -86,11 +86,12 @@ export const SkillItemCss = css('svg', {
   transition: '.3s',
   width: '50px !important',
   height: '50px !important',
-  fill: '$dark500',
+  fill: '$dark400',
   border: '1px solid $light400',
   padding: 8,
   borderRadius: 4,
 
   '&:hover': {
+    fill: '$light100',
   }
 })

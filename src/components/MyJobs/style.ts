@@ -5,8 +5,9 @@ export const Container = styled('section', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-
+  
   '@lg': {
+    paddingY: '5rem',
     paddingInline: '10rem',
   }
 })
