@@ -1,6 +1,7 @@
-import { Segmented, Space } from "antd"
+import { Button, Modal, Segmented, Space } from "antd"
 import { useState } from "react"
 import { Container, Content, JobCard } from "./style"
+
 
 const MyJobs: React.FC = () => {
 
@@ -15,6 +16,20 @@ const MyJobs: React.FC = () => {
 
   const [MenuValue, setMenuValue] = useState<string | number>('All')
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Container>
       <Space style={{ marginBottom: '2rem' }}>
@@ -22,11 +37,26 @@ const MyJobs: React.FC = () => {
       </Space>
       <Content>
         {projects.map(item => (
-          <JobCard>
+          <JobCard onClick={showModal}>
             {item.name}
           </JobCard>
         ))}
       </Content>
+      <Modal
+        title="Basic Modal"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        width={800}
+        footer={[
+          <Button key="back" onClick={handleCancel}>Fechar</Button>,
+          <Button key="demo" type="primary">Demo</Button>
+        ]}
+      >
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
     </Container>
   )
 }
