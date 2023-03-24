@@ -6,7 +6,7 @@ import { Container, Content, TimelineItem } from './style';
 const Timeline: React.FC = () => {
 
   return (
-    <Container>
+    <Container id="timeline">
       <Content>
         <TimelineAntd
           mode="alternate"
