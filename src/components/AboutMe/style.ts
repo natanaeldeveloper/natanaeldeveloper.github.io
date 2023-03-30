@@ -44,28 +44,23 @@ export const Content = styled('div', {
 
 })
 
-export const myPhotoClass = css('img', {
+export const MyPhoto = styled('img', {
   width: '230px !important',
-  height: '230px !important',
 
   '@sm': {
     width: '300px !important',
-    height: '300px !important',
   },
 
   '@md': {
     width: '300px !important',
-    height: '300px !important',
   },
 
   '@lg': {
     width: '250px !important',
-    height: '250px !important',
   },
 
   '@xxl': {
     width: '300px !important',
-    height: '300px !important',
   }
 })
 

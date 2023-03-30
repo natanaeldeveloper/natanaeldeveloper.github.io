@@ -1,15 +1,44 @@
 import { styled, css, getCssText } from '../../styles/stitches.config'
 
+import bannerImg from '../../assets/banner.jpeg'
+
 export const Container = styled('section', {
   width: '100%',
   height: '90vh',
   backgroundColor: '$dark100',
   display: 'flex',
+  backgroundImage: 'url(' + bannerImg + ')',
+  backgroundSize: 'auto 100%',
+  backgroundPosition: 'right',
+  backgroundRepeat: 'no-repeat',
+  position: 'relative',
+
+  '&::before': {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(1,1,1,0.7)',
+    backgroundPosition: 'right',
+    content: '',
+  },
+
+  '@md': {
+    backgroundPosition: 'right',
+
+    '&::before': {
+      backgroundColor: 'rgba(1,1,1,0.5)',
+    },
+  },
+
+  '@lg': {
+    backgroundSize: '100%',
+  },
 })
 
 export const TextArea = styled('div', {
   alignSelf: 'center',
   color: '$light100',
+  zIndex: 2,
 
   paddingInline: '2rem',
 
@@ -27,6 +56,10 @@ export const TextArea = styled('div', {
   h4: {
     fontSize: '1rem',
     fontWeight: 500,
+  },
+
+  '@sm': {
+    paddingInline: '5rem',
   },
 
   '@md': {

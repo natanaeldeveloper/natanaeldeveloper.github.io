@@ -11,11 +11,7 @@ const Header = () => {
         <ButtonArea>
           <Button className={ButtonBudget()}>
             <WhatsAppOutlined />
-            <span>Fazer orçamento</span>
-          </Button>
-          <Button className={ButtonJobOffer()}>
-            <span>Recrutar</span>
-            <CoffeeOutlined />
+            <span>Entrar em contato</span>
           </Button>
         </ButtonArea>
       </TextArea>

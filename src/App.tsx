@@ -8,8 +8,6 @@ import SoftSkills from './components/SoftSkills'
 import MyJobs from './components/MyJobs'
 import Timeline from './components/Timeline'
 import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-
 
 function App() {
 
@@ -17,7 +15,6 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <Header />
       <AboutMe />
       <SoftSkills />

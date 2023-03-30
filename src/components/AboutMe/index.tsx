@@ -15,16 +15,18 @@ import {
 import {
   Container,
   Content,
-  myPhotoClass,
+  MyPhoto,
   SkillArea,
   SkillItemCss,
 } from "./style"
+
+import myPhoto from '../../assets/myPhoto.jpeg'
 
 const AboutMe: React.FC = () => {
   return (
     <Container>
       <Content>
-        <Skeleton.Image className={myPhotoClass()} />
+        <MyPhoto src={myPhoto} />
         <p>Lorem Ipsum is simply dummy text of the printing
           and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s,

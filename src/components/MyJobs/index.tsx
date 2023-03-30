@@ -1,20 +1,18 @@
 import { Button, Modal, Segmented, Space } from "antd"
 import { useState } from "react"
-import { Container, Content, JobCard } from "./style"
+import { Container, Content, JobCard, ModalClass } from "./style"
 
 
 const MyJobs: React.FC = () => {
 
   const [projects, setProjects] = useState([
-    { name: 'sistema de vendas' },
-    { name: 'site avaliações diagnósticas' },
-    { name: 'bloco de notas' },
-    { name: 'sistema de estoque' },
-    { name: 'Notepad' },
-    { name: 'SAGE' },
+    { name: 'sistema de vendas', imageURL: 'https://blog.rocketseat.com.br/content/images/2020/07/ideias-inspiracoes-projetos-design-web-mobile.png' },
+    // { name: 'site avaliações diagnósticas' },
+    // { name: 'bloco de notas' },
+    // { name: 'sistema de estoque' },
+    // { name: 'Notepad' },
+    // { name: 'SAGE' },
   ])
-
-  const [MenuValue, setMenuValue] = useState<string | number>('All')
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -32,27 +30,25 @@ const MyJobs: React.FC = () => {
 
   return (
     <Container>
-      <Space style={{ marginBottom: '2rem' }}>
-        <Segmented size="large" options={['Todos', 'Sites', 'Sistemas', 'UI/UX']} value={MenuValue} onChange={setMenuValue} />
-      </Space>
       <Content>
-        {projects.map(item => (
-          <JobCard onClick={showModal}>
-            {item.name}
+        {projects.map((item, key) => (
+          <JobCard onClick={showModal} key={key}>
+            <img src={item.imageURL} />
           </JobCard>
         ))}
       </Content>
       <Modal
-        title="Basic Modal"
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
+        className={ModalClass()}
         width={800}
         footer={[
           <Button key="back" onClick={handleCancel}>Fechar</Button>,
           <Button key="demo" type="primary">Demo</Button>
         ]}
       >
+        <img src={projects[0].imageURL} />
         <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
