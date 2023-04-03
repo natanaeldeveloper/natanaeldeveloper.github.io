@@ -2,7 +2,7 @@ import { Container, MenuButton, Nav, NavItem } from "./style"
 import { MenuOutlined } from '@ant-design/icons'
 import { useEffect, useMemo, useState } from "react"
 
-const Navbar: React.FC = () => {
+const Navbar = (props: { visibled: boolean }) => {
 
   const [visibled, setVisibled] = useState(false)
   const [width, setWidth] = useState(0)

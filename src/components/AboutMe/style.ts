@@ -1,88 +1,95 @@
-import { css, styled } from "../../styles/stitches.config";
+import { css } from "../../styles/stitches.config";
 
-export const Container = styled('section', {
+export const containerCss = css('section', {
   width: '100%',
-})
-
-export const Content = styled('div', {
+  backgroundColor: '$dark100',
   display: 'flex',
-  width: '100%',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: '3rem 2rem',
-  gap: '2.5rem',
-
-  p: {
-    fontFamily: '$body',
-    fontSize: '1.3rem',
-    textAlign: 'justify',
-  },
-
-  '@sm': {
-    paddingInline: '4rem',
-  },
-  
-  '@md': {
-    paddingInline: '8rem',
-    paddingY: '5rem',
-  },
+  paddingInline: '2rem',
   
   '@lg': {
+    paddingInline: '0rem 4rem',
     flexDirection: 'row',
-    alignItems: 'flex-start',
-    paddingInline: '7rem',
-    paddingY: '10rem',
   },
 
   '@xl': {
-    paddingInline: '12rem',
+    paddingInline: '4rem 8rem',
   },
 
   '@xxl': {
-    paddingInline: '18rem',
+    paddingInline: '8rem 10rem',
   }
-
 })
 
-export const MyPhoto = styled('img', {
-  width: '230px !important',
-
-  '@sm': {
-    width: '300px !important',
+export const myPhotoCss = css('img', {
+  display: 'none',
+  
+  '@lg': {
+    display: 'inline-block',
+    width: '400px',
   },
 
-  '@md': {
-    width: '300px !important',
+  '@xl': {
+    width: '500px',
+  },
+
+  '@xxl': {
+    width: '600px',
+  }
+})
+
+export const contentCss = css('div', {
+  marginTop: '1.5rem',
+})
+
+export const textAreaCss = css('div', {
+  paddingTop: '2rem',
+  maxWidth: 800,
+
+  h1: {
+    fontFamily: '$header',
+    color: '$light400',
+    fontSize: '2.3rem',
+    textAlign: 'center',
+  },
+
+  p: {
+    marginTop: '0.8rem',
+    fontFamily: '$body',
+    color: '$light400',
+    fontSize: '1.3rem',
+    textAlign: 'justify',
+    fontWeight: '400',
   },
 
   '@lg': {
-    width: '250px !important',
-  },
+    paddingY: 0,
 
-  '@xxl': {
-    width: '300px !important',
+    h1: {
+      textAlign: 'left',
+    }
   }
 })
 
-export const SkillArea = styled('div', {
-  paddingTop: '1rem',
+export const stackListAreaCss = css('div', {
   display: 'flex',
-  width: '100%',
-  gap: 8,
-  justifyContent: 'center',
   flexFlow: 'row wrap',
+  justifyContent: 'center',
+  gap: 8,
+  marginTop: '3.5rem',
 
   '@lg': {
     justifyContent: 'flex-start',
   }
 })
 
-export const SkillItemCss = css('svg', {
+export const stackItemCss = css('svg', {
   transition: '.3s',
-  width: '50px !important',
-  height: '50px !important',
-  fill: '$dark400',
-  border: '1px solid $light400',
+  width: '50px',
+  height: '50px',
+  fill: '$light400',
+  border: '1px solid transparent',
   padding: 8,
   borderRadius: 4,
 

@@ -12,6 +12,7 @@ export const Container = styled('section', {
   backgroundPosition: 'right',
   backgroundRepeat: 'no-repeat',
   position: 'relative',
+  justifyContent: 'center',
 
   '&::before': {
     position: 'absolute',
@@ -24,14 +25,17 @@ export const Container = styled('section', {
 
   '@md': {
     backgroundPosition: 'right',
-
     '&::before': {
-      backgroundColor: 'rgba(1,1,1,0.5)',
+      backgroundColor: 'rgba(1,1,1,0.6)',
     },
   },
 
   '@lg': {
-    backgroundSize: '100%',
+    justifyContent: 'flex-start',
+  },
+
+  '@xxl': {
+    backgroundSize: '110%',
   },
 })
 
@@ -39,6 +43,7 @@ export const TextArea = styled('div', {
   alignSelf: 'center',
   color: '$light100',
   zIndex: 2,
+  textAlign: 'center',
 
   paddingInline: '2rem',
 
@@ -63,6 +68,7 @@ export const TextArea = styled('div', {
   },
 
   '@md': {
+
     h1: {
       fontSize: '2.5rem',
     },
@@ -77,6 +83,8 @@ export const TextArea = styled('div', {
   },
 
   '@lg': {
+    textAlign: 'left',
+
     paddingInline: '8rem',
 
     h1: {
@@ -98,6 +106,11 @@ export const ButtonArea = styled('div', {
   flexFlow: 'row wrap',
   gap: 12,
   marginTop: 16,
+  justifyContent: 'center',
+
+  '@lg': {
+    justifyContent: 'flex-start',
+  }
 })
 
 export const Button = styled('button', {
