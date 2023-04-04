@@ -2,7 +2,7 @@ import { styled } from "../../styles/stitches.config";
 
 export const Container = styled('section', {
   width: '100%',
-  backgroundColor: '$light400',
+  backgroundColor: '#0A0A0A',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

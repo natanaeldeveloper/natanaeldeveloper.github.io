@@ -17,10 +17,10 @@ function App() {
     <>
       <Header />
       <AboutMe />
-      {/* <SoftSkills />
+      <SoftSkills />
       <MyJobs />
       <Timeline />
-      <Footer /> */}
+      <Footer />
     </>
   )
 }

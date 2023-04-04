@@ -7,10 +7,12 @@ export const containerCss = css('section', {
   flexDirection: 'column',
   alignItems: 'center',
   paddingInline: '2rem',
-  
+  paddingY: '5rem',
+
   '@lg': {
     paddingInline: '0rem 4rem',
     flexDirection: 'row',
+    paddingY: 0,
   },
 
   '@xl': {
@@ -24,9 +26,9 @@ export const containerCss = css('section', {
 
 export const myPhotoCss = css('img', {
   display: 'none',
-  
+
   '@lg': {
-    display: 'inline-block',
+    display: 'block',
     width: '400px',
   },
 
@@ -40,12 +42,11 @@ export const myPhotoCss = css('img', {
 })
 
 export const contentCss = css('div', {
-  marginTop: '1.5rem',
 })
 
 export const textAreaCss = css('div', {
-  paddingTop: '2rem',
   maxWidth: 800,
+  paddingInline: '0.5rem',
 
   h1: {
     fontFamily: '$header',
@@ -58,13 +59,17 @@ export const textAreaCss = css('div', {
     marginTop: '0.8rem',
     fontFamily: '$body',
     color: '$light400',
-    fontSize: '1.3rem',
+    fontSize: '1.1rem',
     textAlign: 'justify',
     fontWeight: '400',
   },
 
+  '@md': {
+    paddingInline: '3rem',
+  },
+
   '@lg': {
-    paddingY: 0,
+    paddingInline: 0,
 
     h1: {
       textAlign: 'left',
@@ -92,8 +97,10 @@ export const stackItemCss = css('svg', {
   border: '1px solid transparent',
   padding: 8,
   borderRadius: 4,
+  opacity: 0.5,
 
   '&:hover': {
     fill: '$light100',
+    opacity: 1,
   }
 })

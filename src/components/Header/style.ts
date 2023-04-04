@@ -8,7 +8,7 @@ export const Container = styled('section', {
   backgroundColor: '$dark100',
   display: 'flex',
   backgroundImage: 'url(' + bannerImg + ')',
-  backgroundSize: 'auto 100%',
+  backgroundSize: 'auto 150%',
   backgroundPosition: 'right',
   backgroundRepeat: 'no-repeat',
   position: 'relative',
@@ -130,26 +130,26 @@ export const Button = styled('button', {
   }
 })
 
+// export const ButtonBudget = css('button', {
+//   backgroundColor: '#128C7E',
+//   color: '$light100',
+//   border: '1px solid #128C7E',
+
+//   '&:hover': {
+//     backgroundColor: '#075E54',
+//     border: '1px solid #075E54',
+//     color: '$light100',
+//   }
+// })
+
 export const ButtonBudget = css('button', {
-  backgroundColor: '#128C7E',
+  backgroundColor: '$primary',
   color: '$light100',
-  border: '1px solid #128C7E',
+  border: '1px solid $primary',
+  cursor: 'pointer',
 
   '&:hover': {
-    backgroundColor: '#075E54',
-    border: '1px solid #075E54',
-    color: '$light100',
-  }
-})
-
-export const ButtonJobOffer = css('button', {
-  backgroundColor: 'transparent',
-  color: '$light100',
-  border: '1px solid $light100',
-
-  '&:hover': {
-    backgroundColor: '$primary',
-    color: '$light100',
-    border: '1px solid $primary',
+    backgroundColor: '#0049B8',
+    border: '1px solid #0049B8',
   }
 })

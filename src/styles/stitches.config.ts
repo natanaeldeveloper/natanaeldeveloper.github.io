@@ -23,7 +23,7 @@ export const {
   theme: {
     colors: {
 
-      primary: '#0056d3',
+      primary: '#005de9',
 
       // light scales
       light100: '#FFFFFF',
@@ -43,7 +43,7 @@ export const {
     fonts: {
       header: "'Montserrat', sans-serif",
       caption: "'Open Sans', sans-serif",
-      body: "'Yantramanav', sans-serif",
+      body: "'Open Sans', sans-serif",
     }
   },
   utils: {
