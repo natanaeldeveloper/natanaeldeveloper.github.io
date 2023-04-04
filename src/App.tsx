@@ -18,9 +18,9 @@ function App() {
       <Header />
       <AboutMe />
       <SoftSkills />
-      <MyJobs />
-      <Timeline />
-      <Footer />
+      {/* <MyJobs /> */}
+      {/* <Timeline /> */}
+      {/* <Footer /> */}
     </>
   )
 }

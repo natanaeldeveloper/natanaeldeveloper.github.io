@@ -7,12 +7,21 @@ export const Container = styled('section', {
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
-  gap: '2rem',
+  gap: '2.5rem',
   padding: '5rem 1rem',
 
   '@lg': {
     flexDirection: 'row',
     padding: '5rem 5rem',
+  },
+
+  '&:before': {
+    position: 'absolute',
+    // backgroundColor: '#0041A3',
+    content: '',
+    zIndex: 2,
+    width: '100%',
+    height: 300,
   }
 })
 
@@ -22,18 +31,24 @@ export const SoftSkillItem = styled('div', {
   alignItems: 'center',
   textAlign: 'center',
   gap: '1.5rem',
-  maxWidth: 450,
+  maxWidth: 300,
   padding: '1rem',
-
-  svg: {
-    width: 80,
-    borderRadius: '100%',
-    padding: 10,
-    backgroundColor: '$light200',
-    fill: '$dark500',
-  },
+  color: '$light400',
 
   '@lg': {
     gap: '2rem',
   }
+})
+
+export const SoftSkillIcon = styled('div', {
+  borderRadius: '100%',
+  backgroundColor: '#141414',
+  width: 80,
+  height: 80,
+  padding: 23,
+
+  svg: {
+    width: '100%',
+    color: '$primary',
+  },
 })
