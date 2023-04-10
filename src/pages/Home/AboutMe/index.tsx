@@ -39,91 +39,36 @@ const AboutMe: React.FC = () => {
         {
           name: "Laravel",
           element: cibLaravel,
+          color: "#f44336",
         },
         {
           name: "HTML5",
           element: cibHtml5,
+          color: "#FF8C00",
+
         },
         {
           name: "CSS3",
           element: cibCss3,
+          color: "#00BFFF"
         },
         {
           name: "Javascript",
           element: cibJavascript,
+          color: "#FFD700",
         },
         {
           name: "MySQL",
           element: cibMysql,
-        },
-        {
-          name: "Javascript",
-          element: cibJavascript,
-        },
-        {
-          name: "MySQL",
-          element: cibMysql,
+          color: "#6495ED",
         },
         {
           name: "PostgreSQL",
           element: cibPostgresql,
+          color: "#6495ED",
         },
       ]
     },
-    {
-      type: "Ferramentas",
-      skills: [
-        {
-          name: "Git",
-          element: cibGit,
-        },
-        {
-          name: "Figma",
-          element: cibFigma,
-        },
-        {
-          name: "Javascript",
-          element: cibJavascript,
-        },
-        {
-          name: "MySQL",
-          element: cibMysql,
-        },
-        {
-          name: "Javascript",
-          element: cibJavascript,
-        },
-        {
-          name: "MySQL",
-          element: cibMysql,
-        },
-        {
-          name: "Javascript",
-          element: cibJavascript,
-        },
-        {
-          name: "MySQL",
-          element: cibMysql,
-        },
-      ]
-    },
-    // {
-    //   type: "Interesse",
-    //   skills: [
-    //     {
-    //       name: "AWS",
-    //       element: cibAmazonAws,
-    //     },
-    //     {
-    //       name: "Docker",
-    //       element: cibDocker,
-    //     },
-    //     {
-    //       name: "Python",
-    //       element: cibPython,
-    //     },
-    //   ]
-    // }
   ]
 
   return (
@@ -148,7 +93,7 @@ const AboutMe: React.FC = () => {
                     <Tooltip title={skill.name}>
                       <CIcon icon={skill.element} />
                     </Tooltip>
-                  </SkillItem>
+                  </SkillItem> 
                 ))}
               </SkillsItems>
             </SkillsBox>

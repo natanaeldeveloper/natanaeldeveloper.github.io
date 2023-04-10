@@ -93,8 +93,8 @@ export const SkillsBox = styled('div', {
   flexDirection: "column",
   alignItems: "center",
   width: "100%",
-  backgroundColor: "#0A0A0A",
-  padding: "1.3rem",
+  // backgroundColor: "#0F0F0F",
+  // padding: "1.3rem",
   borderRadius: 4,
 
 
@@ -123,17 +123,22 @@ export const SkillsItems = styled('div', {
   },
 
   '@bp3': {
-    maxWidth: 350,
+    // maxWidth: 350,
   }
 })
 
 export const SkillItem = styled('div', {
+
   svg: {
     width: 45,
-    border: "1px solid grey",
-    padding: 8,
+    // border: "1px solid grey",
+    padding: 6,
     borderRadius: 4,
     fill: "white",
     cursor: "pointer",
   },
+})
+
+export const SkillIconCss = css('svg', {
+
 })
