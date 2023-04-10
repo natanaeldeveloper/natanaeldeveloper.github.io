@@ -7,39 +7,40 @@ export const Container = styled('section', {
   alignItems: "center",
 
   '@bp2': {
-    paddingInline: "3rem",
+    padding: "0 3rem",
   },
 
   '@bp3': {
-    paddingInline: "8rem 5rem",
+    paddingInline: "0 5rem",
   },
 
   '@bp4': {
-
+    justifyContent: "center",
   }
 })
 
 export const Photo = styled('img', {
-  width: 200,
+  width: 400,
   height: "max-content",
   display: "none",
 
-  '@bp2': {
-    display: "block",
-  },
-
   '@bp3': {
-    width: 350,
+    display: "block",
+    width: 450,
   },
 
   '@bp4': {
-    width: 400,
+    width: 550,
   }
 })
 
+export const Content = styled('div', {
+  maxWidth: 800,
+})
+
 export const Text = styled('div', {
-  padding: "2rem",
   color: "white",
+  padding: "2rem",
 
   h1: {
     fontFamily: "$header",
@@ -54,7 +55,7 @@ export const Text = styled('div', {
   },
 
   '@bp2': {
-    padding: 0,
+    padding: "2rem 0 0 0",
 
     h1: {
       textAlign: "left",
@@ -63,21 +64,27 @@ export const Text = styled('div', {
     p: {
       textAlign: "left",
     }
-  }
+  },
+
+  '@bp3': {
+    padding: "3rem 0 0 0",
+  },
+
+  '@bp4': {
+    padding: 0,
+  },
 })
 
 export const SkillsContainer = styled('div', {
-  marginTop: "2rem",
   width: "100%",
   display: "flex",
   flexDirection: "column",
-  backgroundColor: "#141414",
-  padding: "1.3rem",
-
-  gap: 16,
+  minHeight: 200,
 
   '@bp2': {
     flexDirection: "row",
+    marginTop: "2rem",
+    gap: "1.5rem",
   }
 })
 
@@ -86,10 +93,10 @@ export const SkillsBox = styled('div', {
   flexDirection: "column",
   alignItems: "center",
   width: "100%",
-  // padding: "1rem",
-  borderRight: "1px solid white",
+  backgroundColor: "#0A0A0A",
+  padding: "1.3rem",
+  borderRadius: 4,
 
-  
 
   span: {
     color: "white",
@@ -108,12 +115,15 @@ export const SkillsItems = styled('div', {
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "center",
-  maxWidth: 300,
   gap: 8,
   marginTop: "1rem",
 
   '@bp2': {
     justifyContent: "flex-start",
+  },
+
+  '@bp3': {
+    maxWidth: 350,
   }
 })
 

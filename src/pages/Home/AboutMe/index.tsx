@@ -11,12 +11,14 @@ import {
   cibPython,
   cibJava,
   cibFigma,
+  cibGit,
 
 } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 
 import {
   Container,
+  Content,
   Photo,
   SkillItem,
   SkillsBox,
@@ -32,7 +34,7 @@ const AboutMe: React.FC = () => {
 
   const skills = [
     {
-      type: "Experiênte",
+      type: "Tecnologias",
       skills: [
         {
           name: "Laravel",
@@ -51,8 +53,12 @@ const AboutMe: React.FC = () => {
           element: cibJavascript,
         },
         {
-          name: "Figma",
-          element: cibFigma,
+          name: "MySQL",
+          element: cibMysql,
+        },
+        {
+          name: "Javascript",
+          element: cibJavascript,
         },
         {
           name: "MySQL",
@@ -65,37 +71,65 @@ const AboutMe: React.FC = () => {
       ]
     },
     {
-      type: "Estudando",
+      type: "Ferramentas",
       skills: [
         {
-          name: "React",
-          element: cibReact,
+          name: "Git",
+          element: cibGit,
+        },
+        {
+          name: "Figma",
+          element: cibFigma,
+        },
+        {
+          name: "Javascript",
+          element: cibJavascript,
+        },
+        {
+          name: "MySQL",
+          element: cibMysql,
+        },
+        {
+          name: "Javascript",
+          element: cibJavascript,
+        },
+        {
+          name: "MySQL",
+          element: cibMysql,
+        },
+        {
+          name: "Javascript",
+          element: cibJavascript,
+        },
+        {
+          name: "MySQL",
+          element: cibMysql,
         },
       ]
     },
-    {
-      type: "Interesse",
-      skills: [
-        {
-          name: "AWS",
-          element: cibAmazonAws,
-        },
-        {
-          name: "Docker",
-          element: cibDocker,
-        },
-        {
-          name: "Python",
-          element: cibPython,
-        },
-      ]
-    }
+    // {
+    //   type: "Interesse",
+    //   skills: [
+    //     {
+    //       name: "AWS",
+    //       element: cibAmazonAws,
+    //     },
+    //     {
+    //       name: "Docker",
+    //       element: cibDocker,
+    //     },
+    //     {
+    //       name: "Python",
+    //       element: cibPython,
+    //     },
+    //   ]
+    // }
   ]
 
   return (
     <Container>
       <Photo src={photoImg} />
-      <div>
+      <Content>
         <Text>
           <h1>Quem sou</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -120,7 +154,7 @@ const AboutMe: React.FC = () => {
             </SkillsBox>
           ))}
         </SkillsContainer>
-      </div>
+      </Content>
     </Container>
   )
 }

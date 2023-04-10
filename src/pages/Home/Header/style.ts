@@ -15,7 +15,6 @@ export const Container = styled("section", {
   zIndex: 1,
   minHeight: 500,
 
-
   '&::before': {
     backgroundColor: "rgba(1,1,1,0.7)",
     position: "absolute",
@@ -25,10 +24,16 @@ export const Container = styled("section", {
     zIndex: -1,
   },
 
-  '@bp2': {
+  '@bp3': {
     justifyContent: "normal",
-    backgroundSize: "115% auto",
-    backgroundPosition: "left",
+    backgroundSize: "150% auto",
+    backgroundPosition: "right",
+  },
+
+  '@bp4': {
+    justifyContent: "normal",
+    backgroundSize: "100% auto",
+    backgroundPosition: "right",
   },
 })
 
@@ -61,6 +66,26 @@ export const Text = styled("div", {
       fontSize: "1.5rem",
     },
   },
+
+  // '@bp3': {
+  //   h1: {
+  //     fontSize: "3.5rem",
+  //   },
+
+  //   h2: {
+  //     fontSize: "2rem",
+  //   },
+  // },
+
+  '@bp4': {
+    h1: {
+      fontSize: "3.5rem",
+    },
+
+    h2: {
+      fontSize: "2rem",
+    },
+  }
 })
 
 export const ContactButton = styled(ButtonBase, {
