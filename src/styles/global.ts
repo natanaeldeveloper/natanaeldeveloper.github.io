@@ -2,7 +2,7 @@ import { globalCss } from "./stitches.config";
 
 const globalStyle = globalCss({
   '@import': [
-    "url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,400;1,500&family=Palanquin:wght@100;300;400;500;600;700&display=swap')"
+    "url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800&Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Yantramanav:wght@300;400;500;600;700&display=swap')",
   ],
 
   '*': {
@@ -15,10 +15,6 @@ const globalStyle = globalCss({
   body: {
     fontFamily: "$body",
   },
-
-  "div, ul, li, a": {
-    // border: "1px solid black",
-  }
 })
 
 export default globalStyle

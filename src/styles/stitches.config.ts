@@ -10,7 +10,7 @@ export const {
   prefix,
   reset,
   styled,
-  theme, 
+  theme,
 } = createStitches({
   media: {
     bp1: '(min-width: 640px)',
@@ -20,19 +20,16 @@ export const {
   },
   theme: {
     colors: {
-        primary: '#005de9',
-        secundary: '#0056d3',
+      primary: '#005de9',
+      secundary: '#0049B8',
     },
     fonts: {
       header: "'Montserrat', sans-serif",
-      caption: "'Average Sans', sans-serif",
-      body: "'Palanquin', sans-serif",
+      caption: "'Open Sans', sans-serif",
+      body: "'Open Sans', sans-serif",
     },
-    sizes: {
-
-    },
+    sizes: {},
   },
-  utils: {
-  }
+  utils: {}
 })
 

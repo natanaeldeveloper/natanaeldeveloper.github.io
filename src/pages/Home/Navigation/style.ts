@@ -2,7 +2,7 @@ import { styled } from "../../../styles/stitches.config";
 
 export const Container = styled('section', {
   width: "100%",
-  backgroundColor: "#005de9",
+  backgroundColor: "black",
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "space-between",
@@ -10,14 +10,14 @@ export const Container = styled('section', {
   alignItems: "center",
 
   "@bp2": {
-    paddingInline: "2rem",
+    paddingInline: "3rem 2rem",
   }
 })
 
 export const Brand = styled('span', {
   color: "white",
   fontWeight: 800,
-  margin: "0.5rem 0 0 0.5rem",
+  margin: "0.5rem 0 0 1.5em",
 
   '@bp2': {
     margin: 0,
@@ -29,7 +29,6 @@ export const MenuToggle = styled('button', {
   backgroundColor: "transparent",
   color: "white",
   fontSize: '1.1rem',
-  border: "1px solid white",
   margin: "0.5rem 0.5rem 0 0",
   borderRadius: 3,
   cursor: "pointer",
@@ -37,8 +36,8 @@ export const MenuToggle = styled('button', {
   visibility: "visible",
 
   '&:hover': {
-    backgroundColor: "white",
-    color: "#005de9",
+    backgroundColor: "$primary",
+    color: "white",
   },
 
   '@bp2': {
@@ -57,14 +56,14 @@ export const Menu = styled('ul', {
   transition: '.3s',
 
   '&.--active': {
-    height: "150px",
+    height: "190px",
     visibility: "visible",
   },
 
   '@bp2': {
     flexDirection: "row",
     width: "max-content",
-    height: "60px !important",
+    height: "65px !important",
   }
 })
 
@@ -80,9 +79,11 @@ export const MenuLink = styled('a', {
   textAlign: "center",
   padding: '0.8rem',
   fontFamily: "$caption",
+  fontWeight: 500,
+  lineHeight: "2rem",
 
   '&:hover': {
-    backgroundColor: "#0056d3",
+    backgroundColor: "$secundary",
   },
 
   '@bp2': {
