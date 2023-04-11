@@ -1,25 +1,24 @@
+import CIcon from '@coreui/icons-react'
 import {
-  cibReact,
   cibLaravel,
   cibMysql,
   cibPostgresql,
   cibJavascript,
   cibCss3,
   cibHtml5,
-  cibAmazonAws,
-  cibDocker,
-  cibPython,
-  cibJava,
   cibFigma,
   cibGit,
-
+  cibJira,
+  cibBootstrap,
+  cibJquery,
+  cibTypescript,
 } from '@coreui/icons'
-import CIcon from '@coreui/icons-react'
 
 import {
   Container,
   Content,
   Photo,
+  SkillIconCss,
   SkillItem,
   SkillsBox,
   SkillsContainer,
@@ -34,45 +33,71 @@ const AboutMe: React.FC = () => {
 
   const skills = [
     {
-      type: "Tecnologias",
-      skills: [
-        {
-          name: "Laravel",
-          element: cibLaravel,
-          color: "#f44336",
-        },
-        {
-          name: "HTML5",
-          element: cibHtml5,
-          color: "#FF8C00",
+      name: "Laravel",
+      element: cibLaravel,
+      color: "#f44336",
+    },
+    {
+      name: "HTML5",
+      element: cibHtml5,
+      color: "#FF8C00",
 
-        },
-        {
-          name: "CSS3",
-          element: cibCss3,
-          color: "#00BFFF"
-        },
-        {
-          name: "Javascript",
-          element: cibJavascript,
-          color: "#FFD700",
-        },
-        {
-          name: "MySQL",
-          element: cibMysql,
-          color: "#6495ED",
-        },
-        {
-          name: "PostgreSQL",
-          element: cibPostgresql,
-          color: "#6495ED",
-        },
-      ]
+    },
+    {
+      name: "CSS3",
+      element: cibCss3,
+      color: "#00BFFF"
+    },
+    {
+      name: "Bootstrap",
+      element: cibBootstrap,
+      color: "#900CF7",
+    },
+    {
+      name: "JavaScript",
+      element: cibJavascript,
+      color: "#FFD700",
+      fill: "#212121",
+    },
+    {
+      name: "TypeScript",
+      element: cibTypescript,
+      color: "#1A4AD3",
+    },
+    {
+      name: "JQuery",
+      element: cibJquery,
+      color: "#1A62AB",
+    },
+    {
+      name: "GIT",
+      element: cibGit,
+      color: "#F75B0C",
+    },
+    {
+      name: "MySQL",
+      element: cibMysql,
+      color: "#1A62AB",
+    },
+    {
+      name: "PostgreSQL",
+      element: cibPostgresql,
+      color: "#1A62AB",
+    },
+    {
+      name: "Figma",
+      element: cibFigma,
+      color: "#9C52DA",
+    },
+    {
+      name: "Jira",
+      element: cibJira,
+      color: "#1F31E5",
     },
   ]
 
   return (
-    <Container>
+    <Container id='aboutMe'>
       <Photo src={photoImg} />
       <Content>
         <Text>
@@ -84,20 +109,25 @@ const AboutMe: React.FC = () => {
             In hac habitasse platea dictumst.</p>
         </Text>
         <SkillsContainer>
-          {skills.map(item => (
-            <SkillsBox>
-              <span>{item.type}</span>
-              <SkillsItems>
-                {item.skills.map(skill => (
-                  <SkillItem>
-                    <Tooltip title={skill.name}>
-                      <CIcon icon={skill.element} />
-                    </Tooltip>
-                  </SkillItem> 
-                ))}
-              </SkillsItems>
-            </SkillsBox>
-          ))}
+          <SkillsBox>
+            <span>Principais Tecnologias</span>
+            <SkillsItems>
+              {skills.map(skill => (
+                <SkillItem>
+                  <Tooltip title={skill.name}>
+                    <CIcon icon={skill.element} className={SkillIconCss({
+                      css: {
+                        '&:hover': {
+                          backgroundColor: skill.color,
+                          fill: skill.fill ?? 'white',
+                        }
+                      }
+                    })} />
+                  </Tooltip>
+                </SkillItem>
+              ))}
+            </SkillsItems>
+          </SkillsBox>
         </SkillsContainer>
       </Content>
     </Container>

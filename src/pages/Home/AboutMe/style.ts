@@ -8,10 +8,12 @@ export const Container = styled('section', {
 
   '@bp2': {
     padding: "0 3rem",
+    alignItems: "flex-start",
   },
 
   '@bp3': {
     paddingInline: "0 5rem",
+    alignItems: "center",
   },
 
   '@bp4': {
@@ -24,8 +26,12 @@ export const Photo = styled('img', {
   height: "max-content",
   display: "none",
 
-  '@bp3': {
+  '@bp2': {
     display: "block",
+    width: 350,
+  },
+
+  '@bp3': {
     width: 450,
   },
 
@@ -40,7 +46,7 @@ export const Content = styled('div', {
 
 export const Text = styled('div', {
   color: "white",
-  padding: "2rem",
+  padding: "5rem 2rem 2rem 2rem",
 
   h1: {
     fontFamily: "$header",
@@ -51,19 +57,16 @@ export const Text = styled('div', {
   p: {
     marginTop: "1rem",
     fontFamily: "$body",
-    textAlign: "center",
+    textAlign: "justify",
   },
 
   '@bp2': {
-    padding: "2rem 0 0 0",
+    padding: 0,
+    marginTop: "5rem",
 
     h1: {
       textAlign: "left",
     },
-
-    p: {
-      textAlign: "left",
-    }
   },
 
   '@bp3': {
@@ -80,11 +83,11 @@ export const SkillsContainer = styled('div', {
   display: "flex",
   flexDirection: "column",
   minHeight: 200,
+  marginTop: "2rem",
+  gap: "1.5rem",
 
-  '@bp2': {
+  '@bp3': {
     flexDirection: "row",
-    marginTop: "2rem",
-    gap: "1.5rem",
   }
 })
 
@@ -93,17 +96,14 @@ export const SkillsBox = styled('div', {
   flexDirection: "column",
   alignItems: "center",
   width: "100%",
-  // backgroundColor: "#0F0F0F",
-  // padding: "1.3rem",
   borderRadius: 4,
-
 
   span: {
     color: "white",
     textAlign: "center",
     fontFamily: "$header",
-    fontWeight: 400,
-    fontSize: "1.2rem",
+    fontWeight: 500,
+    fontSize: "1.3rem",
   },
 
   '@bp2': {
@@ -116,29 +116,25 @@ export const SkillsItems = styled('div', {
   flexFlow: "row wrap",
   justifyContent: "center",
   gap: 8,
-  marginTop: "1rem",
+  padding: "2rem",
+  maxWidth: 400,
 
   '@bp2': {
+    padding: "1rem 0",
     justifyContent: "flex-start",
   },
-
-  '@bp3': {
-    // maxWidth: 350,
-  }
 })
 
 export const SkillItem = styled('div', {
 
   svg: {
     width: 45,
-    // border: "1px solid grey",
-    padding: 6,
+    padding: 8,
     borderRadius: 4,
     fill: "white",
     cursor: "pointer",
+    transition: "0.3s",
   },
 })
 
-export const SkillIconCss = css('svg', {
-
-})
+export const SkillIconCss = css('svg', {})

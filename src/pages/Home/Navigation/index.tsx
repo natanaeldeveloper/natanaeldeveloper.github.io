@@ -36,13 +36,13 @@ const Navigation: React.FC = () => {
       <MenuToggle onClick={onClickMenuToggle}><MenuOutlined /></MenuToggle>
       <Menu className={visible ? "--active" : ""}>
         <MenuItem>
-          <MenuLink href="#">Sobre mim</MenuLink>
+          <MenuLink href="#aboutMe">Quem sou</MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink href="#">Projetos</MenuLink>
+          <MenuLink href="#projects">Projetos</MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink href="#">Habilidades</MenuLink>
+          <MenuLink href="#skills">Habilidades</MenuLink>
         </MenuItem>
       </Menu>
     </Container>

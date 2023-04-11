@@ -15,6 +15,10 @@ const globalStyle = globalCss({
   body: {
     fontFamily: "$body",
   },
+
+  html: {
+    scrollBehavior: "smooth",
+  }
 })
 
 export default globalStyle

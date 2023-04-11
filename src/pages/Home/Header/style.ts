@@ -16,7 +16,7 @@ export const Container = styled("section", {
   minHeight: 500,
 
   '&::before': {
-    backgroundColor: "rgba(1,1,1,0.7)",
+    backgroundColor: "rgba(1,1,1,0.8)",
     position: "absolute",
     height: "100%",
     width: "100%",
@@ -24,9 +24,15 @@ export const Container = styled("section", {
     zIndex: -1,
   },
 
+  '@bp2': {
+    justifyContent: "normal",
+    backgroundSize: "auto 100%",
+    backgroundPosition: "right",
+  },
+
   '@bp3': {
     justifyContent: "normal",
-    backgroundSize: "150% auto",
+    backgroundSize: "auto 100%",
     backgroundPosition: "right",
   },
 
@@ -64,26 +70,6 @@ export const Text = styled("div", {
 
     h2: {
       fontSize: "1.5rem",
-    },
-  },
-
-  // '@bp3': {
-  //   h1: {
-  //     fontSize: "3.5rem",
-  //   },
-
-  //   h2: {
-  //     fontSize: "2rem",
-  //   },
-  // },
-
-  '@bp4': {
-    h1: {
-      fontSize: "3.5rem",
-    },
-
-    h2: {
-      fontSize: "2rem",
     },
   }
 })
