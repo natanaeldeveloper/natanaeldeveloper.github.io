@@ -20,7 +20,7 @@ export const {
   },
   theme: {
     colors: {
-      primary: '#005de9',
+      primary: '#0066FF',
       secundary: '#0049B8',
     },
     fonts: {

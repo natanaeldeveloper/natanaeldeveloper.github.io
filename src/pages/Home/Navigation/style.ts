@@ -83,7 +83,7 @@ export const MenuLink = styled('a', {
   lineHeight: "2rem",
 
   '&:hover': {
-    backgroundColor: "$secundary",
+    backgroundColor: "$primary",
   },
 
   '@bp2': {

@@ -16,7 +16,7 @@ export const Container = styled("section", {
   minHeight: 500,
 
   '&::before': {
-    backgroundColor: "rgba(1,1,1,0.8)",
+    backgroundColor: "rgba(1,1,1,0.5)",
     position: "absolute",
     height: "100%",
     width: "100%",

@@ -18,11 +18,11 @@ import {
   Container,
   Content,
   Photo,
-  SkillIconCss,
-  SkillItem,
-  SkillsBox,
-  SkillsContainer,
-  SkillsItems,
+  HardSkillIconCss,
+  HardSkillItem,
+  HardSkillsBox,
+  HardSkillsContainer,
+  HardSkillsItems,
   Text
 } from "./style"
 
@@ -58,11 +58,6 @@ const AboutMe: React.FC = () => {
       element: cibJavascript,
       color: "#FFD700",
       fill: "#212121",
-    },
-    {
-      name: "TypeScript",
-      element: cibTypescript,
-      color: "#1A4AD3",
     },
     {
       name: "JQuery",
@@ -108,27 +103,27 @@ const AboutMe: React.FC = () => {
             Quisque ut eleifend sapien, sed lobortis nulla.
             In hac habitasse platea dictumst.</p>
         </Text>
-        <SkillsContainer>
-          <SkillsBox>
+        <HardSkillsContainer>
+          <HardSkillsBox>
             <span>Principais Tecnologias</span>
-            <SkillsItems>
+            <HardSkillsItems>
               {skills.map(skill => (
-                <SkillItem>
+                <HardSkillItem>
                   <Tooltip title={skill.name}>
-                    <CIcon icon={skill.element} className={SkillIconCss({
+                    <CIcon icon={skill.element} className={HardSkillIconCss({
                       css: {
                         '&:hover': {
-                          backgroundColor: skill.color,
-                          fill: skill.fill ?? 'white',
+                          backgroundColor: "$primary",
+                          fill: "white",
                         }
                       }
                     })} />
                   </Tooltip>
-                </SkillItem>
+                </HardSkillItem>
               ))}
-            </SkillsItems>
-          </SkillsBox>
-        </SkillsContainer>
+            </HardSkillsItems>
+          </HardSkillsBox>
+        </HardSkillsContainer>
       </Content>
     </Container>
   )

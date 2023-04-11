@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe"
 import Header from "./Header"
 import Navigation from "./Navigation"
+import SoftSkills from "./SoftSkills"
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
       <Navigation />
       <Header />
       <AboutMe />
+      <SoftSkills />
     </>
   )
 }

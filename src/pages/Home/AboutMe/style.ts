@@ -55,6 +55,7 @@ export const Text = styled('div', {
   },
 
   p: {
+    color: "#CDCDCD",
     marginTop: "1rem",
     fontFamily: "$body",
     textAlign: "justify",
@@ -78,7 +79,7 @@ export const Text = styled('div', {
   },
 })
 
-export const SkillsContainer = styled('div', {
+export const HardSkillsContainer = styled('div', {
   width: "100%",
   display: "flex",
   flexDirection: "column",
@@ -91,7 +92,7 @@ export const SkillsContainer = styled('div', {
   }
 })
 
-export const SkillsBox = styled('div', {
+export const HardSkillsBox = styled('div', {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -111,7 +112,7 @@ export const SkillsBox = styled('div', {
   }
 })
 
-export const SkillsItems = styled('div', {
+export const HardSkillsItems = styled('div', {
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "center",
@@ -125,16 +126,17 @@ export const SkillsItems = styled('div', {
   },
 })
 
-export const SkillItem = styled('div', {
+export const HardSkillItem = styled('div', {
 
   svg: {
     width: 45,
     padding: 8,
     borderRadius: 4,
-    fill: "white",
     cursor: "pointer",
     transition: "0.3s",
   },
 })
 
-export const SkillIconCss = css('svg', {})
+export const HardSkillIconCss = css('svg', {
+  fill: "#BEBEBE",
+})
