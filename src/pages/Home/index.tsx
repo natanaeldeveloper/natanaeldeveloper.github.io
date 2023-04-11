@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe"
 import Header from "./Header"
 import Navigation from "./Navigation"
+import Projects from "./Projects"
 import SoftSkills from "./SoftSkills"
 
 const Home: React.FC = () => {
@@ -10,6 +11,7 @@ const Home: React.FC = () => {
       <Header />
       <AboutMe />
       <SoftSkills />
+      <Projects />
     </>
   )
 }

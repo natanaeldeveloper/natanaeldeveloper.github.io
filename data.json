@@ -5,11 +5,9 @@
       "name": "My first project",
       "description": "Sistema de pagamento de contas com pequenas operações bancárias.",
       "banner_url": "",
-      "links": {
-        "github": "https://github.com/my-first-project",
-        "demo": "http://test.com.br",
-        "readme": "https://github.com/my-first-project/readme.md"
-      },
+      "github": "https://github.com/my-first-project",
+      "demo": "http://test.com.br",
+      "readme": "https://github.com/my-first-project/readme.md",
       "stacks": [
         "Laravel",
         "JS",
