@@ -23,7 +23,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <Container>
+    <Container id="projects">
       <Content>
         {projectList.map((project, key) => (
           <Card key={key}>

@@ -4,7 +4,7 @@ import bannerImg from '../../../assets/banner.jpeg'
 
 export const Container = styled("section", {
   height: "calc(100vh - 100px)",
-  backgroundColor: "black",
+  // backgroundColor: "black",
   display: "flex",
   justifyContent: "center",
   backgroundImage: "url(" + bannerImg + ")",

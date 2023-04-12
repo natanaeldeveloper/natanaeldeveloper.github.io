@@ -3,6 +3,7 @@ import Header from "./Header"
 import Navigation from "./Navigation"
 import Projects from "./Projects"
 import SoftSkills from "./SoftSkills"
+import Timeline from "./Timeline"
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <AboutMe />
       <SoftSkills />
       <Projects />
+      <Timeline />
     </>
   )
 }

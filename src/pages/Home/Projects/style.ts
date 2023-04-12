@@ -3,7 +3,11 @@ import { styled } from "../../../styles/stitches.config";
 export const Container = styled("section", {
   width: "100%",
   backgroundColor: "black",
-  padding: "5rem 5rem",
+  padding: "5rem 1rem",
+
+  "@bp2": {
+    padding: "5rem 5rem",
+  },
 
   "@bp4": {
     padding: "5rem 16rem",
@@ -20,10 +24,14 @@ export const Content = styled("div", {
 
 export const Card = styled("div", {
   backgroundColor: " #0E0E0E",
-  width: 350,
   borderRadius: 4,
   transition: ".3s",
   cursor: "pointer",
+  width: 300,
+
+  "@bp2": {
+    width: 350,
+  },
 
   "&:hover": {
     transform: "translateY(-0.8rem)",

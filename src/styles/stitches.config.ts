@@ -22,6 +22,13 @@ export const {
     colors: {
       primary: '#0066FF',
       secundary: '#0049B8',
+
+      light100: "#FAFAFA",
+      light200: "#F1F1F1",
+      light300: "#E5E5E5",
+      
+      dark100: "#000000",
+      dark200: "#171717",
     },
     fonts: {
       header: "'Montserrat', sans-serif",
