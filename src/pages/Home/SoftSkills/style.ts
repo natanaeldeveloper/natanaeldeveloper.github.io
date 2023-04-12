@@ -25,7 +25,6 @@ export const Icon = styled("div", {
   color: "$primary",
   fontSize: "2.2rem",
   backgroundColor: "black",
-  // border: "2px solid $primary",
   borderRadius: "100%",
   display: "flex",
   justifyContent: "center",

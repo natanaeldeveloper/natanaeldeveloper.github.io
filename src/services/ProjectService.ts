@@ -8,7 +8,7 @@ export type Project = {
   github?: string;
   demo?: string;
   readme?: string;
-  skills: string[];
+  tags: string[];
 }
 
 const ProjectService = {
