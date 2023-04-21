@@ -17,6 +17,7 @@ export const {
     bp2: '(min-width: 768px)',
     bp3: '(min-width: 1024px)',
     bp4: '(min-width: 1280px)',
+    bp5: '(min-width: 2000px)',
   },
   theme: {
     colors: {
