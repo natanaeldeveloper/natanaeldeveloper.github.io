@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <Container id="contact">
       <Box>
-        <a href="#"><MailOutlined /> natanaeloliveiramartinsbr@gmail.com</a>
+        <a href="mailto:natanaeloliveiramartinsbr@gmail.com?subject=Olá Natanael, Vi seu portfólio"><MailOutlined /> natanaeloliveiramartinsbr@gmail.com</a>
         <NetworkArea>
           <NetworkItem target="_black" href="https://github.com/natanaeldeveloper"><GithubFilled /></NetworkItem>
           <NetworkItem target="_black" href="https://www.linkedin.com/in/natanael-oliveira-martins"><LinkedinFilled /></NetworkItem>

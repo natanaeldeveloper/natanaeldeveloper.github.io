@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
-import { GithubFilled, LinkOutlined } from "@ant-design/icons"
+import { GithubFilled } from "@ant-design/icons"
+import { cilExternalLink } from "@coreui/icons"
+import CIcon from "@coreui/icons-react"
 import figmaSvg from "../../../assets/figma.svg"
 
 import ProjectService, { Project } from "../../../services/ProjectService"
@@ -13,8 +15,10 @@ import {
   FigmaLink,
   FooterButtons,
   GithubLink,
+  ReadmeLink,
   Tag,
   TagArea,
+  Title,
 } from "./style"
 
 const Projects = () => {
@@ -31,6 +35,8 @@ const Projects = () => {
 
   return (
     <Container id="projects">
+      <Title>PROJETOS</Title>
+      <h1>Projetos</h1>
       <Content>
         {projectList.map((project, key) => (
           <Card key={key}>
@@ -41,8 +47,8 @@ const Projects = () => {
               <h1>{project.name}</h1>
               <p>{project.description.slice(0, 100) + "..."}</p>
               <TagArea>
-                {project.tags?.map((stack) => (
-                  <Tag key={stack}>{stack}</Tag>
+                {project.tags?.map((stack, key2) => (
+                  <Tag key={key2} title={stack}>{stack}</Tag>
                 ))}
               </TagArea>
             </CardBody>
@@ -50,6 +56,7 @@ const Projects = () => {
               <FooterButtons>
                 {project.github && <GithubLink href={project.github} target="_blank"><GithubFilled /></GithubLink>}
                 {project.figma && <FigmaLink href={project.figma} target="_blank"><img src={figmaSvg} /></FigmaLink>}
+                {project.readme && <ReadmeLink href={project.readme} target="_blank"><CIcon icon={cilExternalLink} /></ReadmeLink>}
               </FooterButtons>
               {project.created_at && <span>{project.created_at}</span>}
             </CardFooter>

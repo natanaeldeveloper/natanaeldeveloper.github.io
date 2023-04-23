@@ -47,7 +47,7 @@ const Header: React.FC = () => {
             <MenuLink href="#projects">Projetos</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#timeline">Linha do Tempo</MenuLink>
+            <MenuLink href="#experiences">Experiências</MenuLink>
           </MenuItem>
           <MenuItem>
             <MenuLink href="#contact">Redes Sociais</MenuLink>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
       </Navbar>
       <Text>
         <h1>Natanael Oliveira</h1>
-        <h2>Web Developer | Full-Stack</h2>
+        <h2>Desenvolvedor Web | Full-Stack</h2>
         <ContactButton>
           <WhatsAppOutlined />&nbsp;&nbsp;
           <span>Entrar em contato</span>

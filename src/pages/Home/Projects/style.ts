@@ -1,16 +1,34 @@
 import { styled } from "../../../styles/stitches.config";
 
+export const Title = styled("h1", {
+  fontFamily: "$outline",
+  fontSize: "4rem",
+  color: "#595959",
+
+
+  "@bp2": {
+    color: "#3F3F3F",
+    fontSize: "7rem",
+  },
+
+  "@bp4": {
+    fontSize: "7rem",
+
+  }
+})
+
 export const Container = styled("section", {
   width: "100%",
   backgroundColor: "black",
   padding: "5rem 1rem",
+  textAlign: "center",
 
   "@bp2": {
-    padding: "5rem 5rem",
+    padding: "2rem 5rem",
   },
 
   "@bp4": {
-    padding: "5rem 12rem",
+    padding: "2rem 12rem",
   }
 })
 
@@ -48,6 +66,7 @@ export const CardHeader = styled("div", {
 
 export const CardBody = styled("div", {
   padding: "0 1rem 1.5rem 1rem",
+  textAlign: "left",
 
   h1: {
     color: "white",
@@ -81,15 +100,15 @@ export const Tag = styled("span", {
 
 export const CardFooter = styled("div", {
   display: "flex",
-  justifyContent: "space-between", 
+  justifyContent: "space-between",
   alignItems: "center",
   padding: "0 1rem 1.5rem 1rem",
-  
+
   span: {
     color: "#5A5A5A",
     fontSize: 12,
     fontFamily: "$body",
-    fontWeight: 600, 
+    fontWeight: 600,
   },
 })
 
@@ -110,8 +129,16 @@ export const GithubLink = styled("a", {
 
 export const FigmaLink = styled("a", {
   color: "$light100",
-  fontSize: 30,
+  fontSize: 22,
 
+  svg: {
+    fill: "$light100",
+  }
+})
+
+export const ReadmeLink = styled("a", {
+  color: "$light100",
+  width: 24,
   svg: {
     fill: "$light100",
   }

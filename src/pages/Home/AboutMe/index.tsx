@@ -97,11 +97,11 @@ const AboutMe: React.FC = () => {
       <Content>
         <Text>
           <h1>Quem sou</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque mauris libero, rutrum in dictum ac, vestibulum quis ante.
-            Suspendisse sed porttitor purus, non condimentum metus.
-            Quisque ut eleifend sapien, sed lobortis nulla.
-            In hac habitasse platea dictumst.</p>
+          <p>Olá! me chamo Natanael, sou programador a 5 anos, mais especificamente 
+            de aplicações web. Tenho formação em <b>Técnico de Informática </b>
+            e atualmente graduando em <b>Análise e Desenvolvimento de Sistemas</b>. 
+            Gosto de resolver problemas não é atoa que programação é um dos meus hobbies.
+          </p>
         </Text>
         <HardSkillsContainer>
           <HardSkillsBox>

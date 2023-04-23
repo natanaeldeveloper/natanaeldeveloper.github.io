@@ -10,7 +10,7 @@ export const Content = styled("div", {
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "center",
-  gap: "3rem",
+  gap: "4rem",
 })
 
 export const Box = styled("div", {

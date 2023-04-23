@@ -1,4 +1,7 @@
-import { PieChartOutlined, LineChartOutlined, ApartmentOutlined } from "@ant-design/icons"
+import { FlagOutlined, CodeOutlined } from "@ant-design/icons"
+import { cilHandshake } from "@coreui/icons"
+import CIcon from "@coreui/icons-react"
+
 import { Box, Container, Content, Icon, Text } from "./style"
 
 const SoftSkills: React.FC = () => {
@@ -7,38 +10,36 @@ const SoftSkills: React.FC = () => {
       <Content>
         <Box>
           <Icon>
-            <PieChartOutlined />
+          <FlagOutlined />
           </Icon>
           <Text>
-            <h2>Regerenciamento</h2>
-            <p>Descrição sobre essa soft skill
-              Descrição sobre essa soft skill
-              Descrição sobre essa soft skill
-            </p>
+            <h2>Iniciativa e comprometimento</h2>
+            <p>Se há um problema a ser resolvido,
+              não espero muito para resolve-lo.
+              O que desenvolvo, o faço como se fosse
+              para mim mesmo.</p>
           </Text>
         </Box>
         <Box>
           <Icon>
-            <LineChartOutlined />
+            <CodeOutlined />
           </Icon>
           <Text>
-            <h2>Regerenciamento</h2>
-            <p>Descrição sobre essa soft skill
-              o sobre essa soft skill
-              Descrição sobre ess
-            </p>
+            <h2>Código limpo</h2>
+            <p>Busco implementar um código objetivo
+              e auto-descritivo, Gosto de refatorar
+              quando descubro soluções mais eficiêntes.</p>
           </Text>
         </Box>
         <Box>
           <Icon>
-            <ApartmentOutlined />
+            <CIcon style={{ padding: 16 }} icon={cilHandshake} />
           </Icon>
           <Text>
-            <h2>Regerenciamento</h2>
-            <p>Descrição sobre essa soft skill
-              o sobre essa soft skill
-              Descrição sobre ess
-            </p>
+            <h2>Bom relacionamento</h2>
+            <p>Busco ao máximo evitar conflitos e manter 
+              um ambiente de trabalho agradável para mim e minha 
+              equipe de trabalho.</p>
           </Text>
         </Box>
       </Content>

@@ -32,6 +32,7 @@ export const {
       dark200: "#171717",
     },
     fonts: {
+      outline: "'Made Tommy Outline', sans-serif",
       header: "'Montserrat', sans-serif",
       caption: "'Open Sans', sans-serif",
       body: "'Open Sans', sans-serif",
