@@ -47,7 +47,10 @@ const Header: React.FC = () => {
             <MenuLink href="#projects">Projetos</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#skills">Habilidades</MenuLink>
+            <MenuLink href="#timeline">Linha do Tempo</MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink href="#contact">Fale comigo</MenuLink>
           </MenuItem>
         </Menu>
       </Navbar>
