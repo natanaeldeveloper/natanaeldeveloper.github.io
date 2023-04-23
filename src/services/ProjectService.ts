@@ -6,6 +6,8 @@ export type Project = {
   description: string;
   banner_url: string;
   github?: string;
+  figma?: string;
+  created_at?: string;
   demo?: string;
   readme?: string;
   tags: string[];

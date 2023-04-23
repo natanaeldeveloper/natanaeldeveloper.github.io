@@ -10,7 +10,7 @@ export const Content = styled("div", {
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "center",
-  gap: "5rem",
+  gap: "3rem",
 })
 
 export const Box = styled("div", {
@@ -18,7 +18,7 @@ export const Box = styled("div", {
   flexDirection: "column",
   alignItems: "center",
   gap: "1.5rem",
-  maxWidth: 350,
+  maxWidth: 300,
 })
 
 export const Icon = styled("div", {
@@ -37,14 +37,16 @@ export const Text = styled("div", {
   color: "white",
   textAlign: "center",
 
-  h1: {
-    fontFamily: "$header",
-    fontSize: "1.4rem",
+  h2: {
+    fontFamily: "$body",
+    fontSize: "1.3rem",
+    fontWeight: 700,
     marginBottom: "0.7rem",
   },
 
   p: {
     fontFamily: "$body",
     color: "#CDCDCD",
+    fontSize: "1rem",
   }
 })

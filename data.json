@@ -6,6 +6,8 @@
       "description": "💻 📦 ☕ Sistema Administrativo de Gerenciamento de Estoque (SAGE). Sistema logístico desenvolvido em Java e Hibernate, projeto realizado como atividade curricular da cadeira de Programação Orientada a Objetos (POO) e Sistema Operacional (SO).",
       "banner_url": "https://github.com/Natanael-Oliveira-br/project_SAGE/raw/master/identidade_visual/logo-200.png",
       "github": "https://github.com/natanaeldeveloper/sistema-sage",
+      "figma": "aaa",
+      "created_at": "12 Out. 2023",
       "readme": "https://github.com/natanaeldeveloper/sistema-sage/blob/237bcd321fcabe1438a62ed244cd1e33ba0916f4/README.md",
       "tags": [
         "Java",

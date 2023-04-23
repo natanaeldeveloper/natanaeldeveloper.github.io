@@ -75,7 +75,7 @@ export const Text = styled('div', {
   },
 
   '@bp4': {
-    padding: 0,
+    padding:" 0 2rem 0 0" ,
   },
 })
 

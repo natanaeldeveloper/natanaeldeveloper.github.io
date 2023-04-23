@@ -10,7 +10,7 @@ const SoftSkills: React.FC = () => {
             <PieChartOutlined />
           </Icon>
           <Text>
-            <h1>Regerenciamento</h1>
+            <h2>Regerenciamento</h2>
             <p>Descrição sobre essa soft skill
               Descrição sobre essa soft skill
               Descrição sobre essa soft skill
@@ -22,7 +22,7 @@ const SoftSkills: React.FC = () => {
             <LineChartOutlined />
           </Icon>
           <Text>
-            <h1>Regerenciamento</h1>
+            <h2>Regerenciamento</h2>
             <p>Descrição sobre essa soft skill
               o sobre essa soft skill
               Descrição sobre ess
@@ -34,7 +34,7 @@ const SoftSkills: React.FC = () => {
             <ApartmentOutlined />
           </Icon>
           <Text>
-            <h1>Regerenciamento</h1>
+            <h2>Regerenciamento</h2>
             <p>Descrição sobre essa soft skill
               o sobre essa soft skill
               Descrição sobre ess

@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react"
+import { GithubFilled, LinkOutlined } from "@ant-design/icons"
+import figmaSvg from "../../../assets/figma.svg"
+
 import ProjectService, { Project } from "../../../services/ProjectService"
 import {
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   Container,
   Content,
+  FigmaLink,
+  FooterButtons,
+  GithubLink,
   Tag,
   TagArea,
 } from "./style"
@@ -39,6 +46,13 @@ const Projects = () => {
                 ))}
               </TagArea>
             </CardBody>
+            <CardFooter>
+              <FooterButtons>
+                {project.github && <GithubLink href={project.github} target="_blank"><GithubFilled /></GithubLink>}
+                {project.figma && <FigmaLink href={project.figma} target="_blank"><img src={figmaSvg} /></FigmaLink>}
+              </FooterButtons>
+              {project.created_at && <span>{project.created_at}</span>}
+            </CardFooter>
           </Card>
         ))}
       </Content>
