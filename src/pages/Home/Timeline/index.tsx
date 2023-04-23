@@ -1,12 +1,24 @@
 import { Timeline } from "antd"
 import { ClockCircleOutlined } from "@ant-design/icons"
 import { Container, History, TimelineCss } from "./style"
+import { useEffect, useState } from "react"
 
 const TimelinePage: React.FC = () => {
+
+  var [width, setWidth] = useState(0)
+
+  function handleResize() {
+    setWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  }, [])
+
   return (
     <Container id="timeline">
       <Timeline
-        mode="alternate"
+        mode={width < 705 ? "left" : "alternate"}
         style={{ width: 900 }}
         className={TimelineCss()}
         items={[

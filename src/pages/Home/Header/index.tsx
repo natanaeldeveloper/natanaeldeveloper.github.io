@@ -50,7 +50,7 @@ const Header: React.FC = () => {
             <MenuLink href="#timeline">Linha do Tempo</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#contact">Fale comigo</MenuLink>
+            <MenuLink href="#contact">Redes Sociais</MenuLink>
           </MenuItem>
         </Menu>
       </Navbar>

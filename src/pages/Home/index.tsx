@@ -1,4 +1,5 @@
 import AboutMe from "./AboutMe"
+import Footer from "./Footer"
 import Header from "./Header"
 import Projects from "./Projects"
 import SoftSkills from "./SoftSkills"
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <SoftSkills />
       <Projects />
       <Timeline />
+      <Footer />
     </>
   )
 }

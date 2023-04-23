@@ -104,7 +104,7 @@ export const Menu = styled('ul', {
   transition: '.3s',
 
   '&.--active': {
-    height: "190px",
+    height: "250px",
     visibility: "visible",
   },
 
