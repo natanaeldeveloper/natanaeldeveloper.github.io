@@ -12,7 +12,7 @@ export const Title = styled("h1", {
   },
 
   "@bp4": {
-    fontSize: "7rem",
+    fontSize: "8rem",
 
   }
 })

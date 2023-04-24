@@ -98,8 +98,8 @@ const AboutMe: React.FC = () => {
         <Text>
           <h1>Quem sou</h1>
           <p>Olá! me chamo Natanael, sou programador a 5 anos, mais especificamente 
-            de aplicações web. Tenho formação em <b>Técnico de Informática </b>
-            e atualmente graduando em <b>Análise e Desenvolvimento de Sistemas</b>. 
+            de aplicações web. Possuo formação em <b>Técnico de Informática </b>
+            e atualmente estou graduando em <b>Análise e Desenvolvimento de Sistemas</b>. 
             Gosto de resolver problemas não é atoa que programação é um dos meus hobbies.
           </p>
         </Text>
