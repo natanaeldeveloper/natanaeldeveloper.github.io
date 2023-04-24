@@ -9,7 +9,7 @@ const globalStyle = globalCss({
     {
       fontFamily: "Made Tommy Outline",
       fontWeight: 800,
-      src: "url('/src/styles/fonts/made_tommy/MADE TOMMY Black Outline_PERSONAL USE.otf')"
+      src: "url('/fonts/MADE TOMMY Black Outline_PERSONAL USE.otf')"
     }
   ],
 
