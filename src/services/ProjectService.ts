@@ -15,8 +15,8 @@ export type Project = {
 
 const ProjectService = {
   async findAll() {
-    const response = await api.get<Project[]>("projects");
-    return response.data
+    const response = await api.get<{ projects: Project[] }>("");
+    return response.data.projects
   }
 }
 
