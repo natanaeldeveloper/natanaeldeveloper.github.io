@@ -24,11 +24,11 @@ export const Container = styled("section", {
   textAlign: "center",
 
   "@bp2": {
-    padding: "2rem 5rem",
+    padding: "4rem 5rem",
   },
 
   "@bp4": {
-    padding: "2rem 12rem",
+    padding: "4rem 14rem",
   }
 })
 
