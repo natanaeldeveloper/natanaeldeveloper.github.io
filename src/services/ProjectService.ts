@@ -4,13 +4,12 @@ export type Project = {
   id: number;
   name: string;
   description: string;
-  banner_url: string;
   github?: string;
   figma?: string;
   created_at?: string;
   demo?: string;
-  readme?: string;
   tags: string[];
+  images: string[];
 }
 
 const ProjectService = {
