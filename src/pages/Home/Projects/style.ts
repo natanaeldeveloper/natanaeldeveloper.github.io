@@ -36,7 +36,7 @@ export const Content = styled("div", {
   display: "flex",
   flexFlow: "row wrap",
   justifyContent: "center",
-  alignItems: "center",
+  alignItems: "flex-start",
   gap: "1rem",
 })
 
@@ -48,7 +48,7 @@ export const Card = styled("div", {
   width: 300,
 
   "@bp2": {
-    width: 290,
+    width: 310,
   },
 
   "&:hover": {
@@ -57,21 +57,19 @@ export const Card = styled("div", {
 })
 
 export const CardHeader = styled("div", {
-  padding: "0.5rem",
-
   img: {
     width: "100%",
   },
 })
 
 export const CardBody = styled("div", {
-  padding: "0 1rem 1.5rem 1rem",
+  padding: "1rem 1rem 1.5rem 1rem",
   textAlign: "left",
 
   h1: {
     color: "white",
     fontWeight: 500,
-    fontSize: 20,
+    fontSize: 19,
   },
 
   p: {

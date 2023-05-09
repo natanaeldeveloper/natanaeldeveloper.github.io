@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Sistema administrativo de gestão de estoque",
+      "description": "Controle de entrada e saída de produtos, gestão de fornecedores e produtos. Além da emissão de relatórios de seus fornecedores, produtos e movimentações do mês.",
+      "github": "https://github.com/natanaeldeveloper/sistema-sage",
+      "created_at": "Jul 23, 2020",
+      "tags": [
+        "java",
+        "maven",
+        "hibernate",
+        "jframe"
+      ],
+      "images": [
+        "sage/banner.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Gerenciador de despesas da república",
+      "description": "Desenvolvido para universitários que desejam gerenciar os gastos do mês em seu domicílio e emitir um resumo da fatura de cada membro ao final do mês.",
+      "github": "https://github.com/natanaeldeveloper/republic-expense-management-website",
+      "demo": "https://natanaeldeveloper.github.io/republic-expense-management-website",
+      "created_at": "Jan 13, 2023",
+      "tags": [
+        "html",
+        "boostrap",
+        "javascript"
+      ],
+      "images": [
+        "site-republica/banner.png"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Gerenciador de tarefas",
+      "description": "Neste projeto foram explorado funcionalidades como filtro de busca com ordenação e paginação, autenticação de usuário via Token API, além de cadastro e edição de tarefas.",
+      "github": "https://github.com/natanaeldeveloper/site-todolist.git",
+      "created_at": "Mar 2, 2023",
+      "tags": [
+        "laravel",
+        "rest-api",
+        "react",
+        "ant-design"
+      ],
+      "images": [
+        "site-todolist/banner.png"
+      ]
+    }
+  ]
+}

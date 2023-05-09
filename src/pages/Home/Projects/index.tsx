@@ -26,7 +26,7 @@ const Projects = () => {
 
   async function handleProjects() {
     const projects = await ProjectService.findAll()
-    setProjectList(projects)
+    setProjectList(projects.reverse())
   }
 
   useEffect(() => {
@@ -41,11 +41,11 @@ const Projects = () => {
         {projectList.map((project, key) => (
           <Card key={key}>
             <CardHeader>
-              <img src={project.banner_url} />
+              <img src={'posts/' + project.images[0]} />
             </CardHeader>
             <CardBody>
               <h1>{project.name}</h1>
-              <p>{project.description.slice(0, 100) + "..."}</p>
+              <p>{project.description.length < 200 ? project.description.slice(0, 200) : project.description.slice(0, 200) + "..."}</p>
               <TagArea>
                 {project.tags?.map((stack, key2) => (
                   <Tag key={key2} title={stack}>{stack}</Tag>
@@ -56,7 +56,7 @@ const Projects = () => {
               <FooterButtons>
                 {project.github && <GithubLink href={project.github} target="_blank"><GithubFilled /></GithubLink>}
                 {project.figma && <FigmaLink href={project.figma} target="_blank"><img src={figmaSvg} /></FigmaLink>}
-                {project.readme && <ReadmeLink href={project.readme} target="_blank"><CIcon icon={cilExternalLink} /></ReadmeLink>}
+                {project.demo && <ReadmeLink href={project.demo} target="_blank"><CIcon icon={cilExternalLink} /></ReadmeLink>}
               </FooterButtons>
               {project.created_at && <span>{project.created_at}</span>}
             </CardFooter>
