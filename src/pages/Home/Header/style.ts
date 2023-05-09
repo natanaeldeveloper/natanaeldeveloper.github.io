@@ -132,7 +132,7 @@ export const MenuLink = styled('a', {
   transition: ".3s",
   backgroundColor: "transparent",
   borderBottom: "2px solid transparent",
-  
+
   "&:hover": {
     backgroundColor: "$primary",
     borderBottom: "2px solid transparent",
@@ -191,11 +191,12 @@ export const Text = styled("div", {
 export const ContactButton = styled(ButtonBase, {
   margin: "1.5rem 0 0 0",
   backgroundColor: "$primary",
-  color: "white",
   transition: ".3s",
+  textDecoration: 'none',
+  color: "white",
 
   '&:hover': {
     backgroundColor: "$secundary",
-  }
+  },
 })
 

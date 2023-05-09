@@ -57,9 +57,9 @@ const Header: React.FC = () => {
       <Text>
         <h1>Natanael Oliveira</h1>
         <h2>Desenvolvedor Web | Full-Stack</h2>
-        <ContactButton>
-          <WhatsAppOutlined />&nbsp;&nbsp;
-          <span>Entrar em contato</span>
+
+        <ContactButton href="https://api.whatsapp.com/send?phone=85994361023" target="_blank">
+          <WhatsAppOutlined />&nbsp;&nbsp;<span>Entrar em contato</span>
         </ContactButton>
       </Text>
     </Container>
