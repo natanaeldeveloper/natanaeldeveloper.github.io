@@ -36,7 +36,6 @@ const Projects = () => {
   return (
     <Container id="projects">
       <Title>PROJETOS</Title>
-      <h1>Projetos</h1>
       <Content>
         {projectList.map((project, key) => (
           <Card key={key}>

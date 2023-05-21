@@ -1,4 +1,4 @@
-import { WhatsAppOutlined, MenuOutlined } from "@ant-design/icons"
+import { ArrowRightOutlined, MenuOutlined, RightOutlined } from "@ant-design/icons"
 
 import {
   Brand,
@@ -58,8 +58,9 @@ const Header: React.FC = () => {
         <h1>Natanael Oliveira</h1>
         <h2>Desenvolvedor Web | Full-Stack</h2>
 
-        <ContactButton href="https://api.whatsapp.com/send?phone=85994361023" target="_blank">
-          <WhatsAppOutlined />&nbsp;&nbsp;<span>Entrar em contato</span>
+        <ContactButton href="#contact">
+          <span>Entrar em contato</span>
+          &nbsp;&nbsp;<ArrowRightOutlined />
         </ContactButton>
       </Text>
     </Container>

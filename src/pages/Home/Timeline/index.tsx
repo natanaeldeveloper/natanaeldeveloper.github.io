@@ -26,6 +26,17 @@ const TimelinePage: React.FC = () => {
           {
             children: (
               <History>
+                <h3>Desenvolvedor Pleno Full-Stack</h3>
+                <h4>Fabrica Info</h4>
+                <h5>2023/Maio - Atualmente</h5>
+                <p><i>Responsável pelo desenvolvimento e
+                  manutenção de aplicações para plataformas web.</i></p>
+              </History>
+            ),
+          },
+          {
+            children: (
+              <History>
                 <h3>Programador de Sistemas</h3>
                 <h4>SME - Secretaria Municipal de Educação de Maracanaú</h4>
                 <h5>2021/Mar - Atualmente</h5>

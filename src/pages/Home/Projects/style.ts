@@ -48,7 +48,7 @@ export const Card = styled("div", {
   width: 300,
 
   "@bp2": {
-    width: 310,
+    width: 280,
   },
 
   "&:hover": {
@@ -63,7 +63,7 @@ export const CardHeader = styled("div", {
 })
 
 export const CardBody = styled("div", {
-  padding: "1rem 1rem 1.5rem 1rem",
+  padding: "1rem 1rem 1rem 1rem",
   textAlign: "left",
 
   h1: {
@@ -100,7 +100,7 @@ export const CardFooter = styled("div", {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  padding: "0 1rem 1.5rem 1rem",
+  padding: "0 1rem 1rem 1rem",
 
   span: {
     color: "#5A5A5A",
